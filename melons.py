@@ -35,4 +35,14 @@ class Melon:
 class Squash(Melon):
     """Winter squash."""
 
-    # FIX ME: Add Squash class definition here.
+    # def __init__(self, melon_type):
+    #     """Initialize the attributes of a Squash instance."""
+
+    #     super().__init__("Winter Squash")
+
+    def prep(self):
+        
+        """Prepare the squash"""
+        super().prep()  # do not pass in self; that's already being done in the parent's prep method
+        robots.painterbot.paint(self)
+
